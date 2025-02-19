@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/news%20types/educational.dart';
+import 'package:news_app/news%20types/entertainment.dart';
 import 'package:news_app/news_page.dart';
 
 void main() {
