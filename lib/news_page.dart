@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/news%20types/editoral.dart';
 import 'package:news_app/news%20types/sport.dart';
 import 'package:news_app/news%20types/business.dart';
 import 'package:news_app/news%20types/educational.dart';
@@ -54,12 +55,15 @@ class NewsPage extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      const Text(
-                        'Sabrina Carpenter to perform and wins Global Success',
-                        style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.cyanAccent),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 5.0),
+                        child: const Text(
+                          'Sabrina Carpenter to perform and wins Global Success',
+                          style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.cyanAccent),
+                        ),
                       ),
                       SizedBox(
                         width: 5,
@@ -94,12 +98,15 @@ class NewsPage extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      const Text(
-                        '2025 UTME: JAMB to penalise underage applicants - Oloyede',
-                        style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.cyanAccent),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 5.0),
+                        child: const Text(
+                          '2025 UTME: JAMB to penalise underage applicants - Oloyede',
+                          style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.cyanAccent),
+                        ),
                       ),
                       SizedBox(
                         width: 5,
@@ -134,10 +141,13 @@ class NewsPage extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      const Text(
-                        'LookMan hitback at his Manager afer \'worst penalty kick ever\' comment',
-                        style:
-                            TextStyle(fontSize: 5, fontWeight: FontWeight.bold),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 5.0),
+                        child: const Text(
+                          'LookMan hitback at his Manager afer \'worst penalty kick ever\' comment',
+                          style: TextStyle(
+                              fontSize: 5, fontWeight: FontWeight.bold),
+                        ),
                       ),
                       SizedBox(
                         width: 5,
@@ -166,16 +176,19 @@ class NewsPage extends StatelessWidget {
                   width: 480,
                   decoration: const BoxDecoration(
                     gradient: LinearGradient(
-                        colors: [Colors.indigo, Colors.black38],
+                        colors: [Colors.indigo, Colors.black45],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight),
                   ),
                   child: Row(
                     children: [
-                      const Text(
-                        'NGX reverses loss as investors pocket N505bn',
-                        style: TextStyle(
-                            fontSize: 12, fontWeight: FontWeight.bold),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 5.0),
+                        child: const Text(
+                          'NGX reverses loss as investors pocket N505bn',
+                          style: TextStyle(
+                              fontSize: 12, fontWeight: FontWeight.bold),
+                        ),
                       ),
                       SizedBox(
                         width: 5,
@@ -184,6 +197,47 @@ class NewsPage extends StatelessWidget {
                         'assets/Nig.jpg',
                         height: 200,
                         width: 200,
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const EditoralNews()));
+                },
+                child: Container(
+                  height: 200,
+                  width: 480,
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                        colors: [Colors.indigo, Colors.black54],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight),
+                  ),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 5.0),
+                        child: const Text(
+                          'Deprioritising Maradi railway project',
+                          style: TextStyle(
+                              fontSize: 12, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Image.asset(
+                        'assets/edit.jpg',
+                        height: 300,
+                        width: 250,
                       )
                     ],
                   ),
