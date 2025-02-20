@@ -61,6 +61,9 @@ class NewsPage extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             color: Colors.cyanAccent),
                       ),
+                      SizedBox(
+                        width: 5,
+                      ),
                       Image.asset(
                         'assets/brits award.jpg',
                         height: 150,
@@ -98,6 +101,9 @@ class NewsPage extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             color: Colors.cyanAccent),
                       ),
+                      SizedBox(
+                        width: 5,
+                      ),
                       Image.asset(
                         'assets/edu.jpg',
                         height: 200,
@@ -132,6 +138,9 @@ class NewsPage extends StatelessWidget {
                         'LookMan hitback at his Manager afer \'worst penalty kick ever\' comment',
                         style:
                             TextStyle(fontSize: 5, fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        width: 5,
                       ),
                       Image.asset(
                         'assets/sport.jpg',
@@ -171,10 +180,10 @@ class NewsPage extends StatelessWidget {
                       SizedBox(
                         width: 5,
                       ),
-                      Image.network(
-                        'https://cdn.punchng.com/wp-content/uploads/2023/06/15233048/Nigerian-Stock-Exchange-1.jpg',
-                        height: 50,
-                        width: 50,
+                      Image.asset(
+                        'assets/Nig.jpg',
+                        height: 200,
+                        width: 200,
                       )
                     ],
                   ),
