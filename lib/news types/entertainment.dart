@@ -12,7 +12,7 @@ class EntertainmentNews extends StatelessWidget {
         shadowColor: Colors.amber,
         elevation: 5,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           'Sabrina Carpenter to perform and wins Global Success',
           style: TextStyle(
               fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black),

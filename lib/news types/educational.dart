@@ -10,7 +10,7 @@ class EducationalNews extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.indigoAccent,
         shadowColor: Colors.amber,
-        title: Text(
+        title: const Text(
           '2025 UTME: JAMB to penalise underage applicants - Oloyede',
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),

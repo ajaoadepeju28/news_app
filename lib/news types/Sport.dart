@@ -12,7 +12,7 @@ class SportNews extends StatelessWidget {
           shadowColor: Colors.amber,
           elevation: 5,
           centerTitle: true,
-          title: Text(
+          title: const Text(
             'Ademola Lookman has hit back at his own manager Gian Piero Gasperini after criticism of his penalty-taking',
             style: TextStyle(
                 fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black),
