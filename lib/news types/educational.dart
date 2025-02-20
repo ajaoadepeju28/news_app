@@ -8,7 +8,7 @@ class EducationalNews extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.indigoAccent,
+        backgroundColor: Colors.indigo,
         shadowColor: Colors.amber,
         title: const Text(
           '2025 UTME: JAMB to penalise underage applicants - Oloyede',

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/news%20types/change.dart';
 import 'package:news_app/news%20types/editoral.dart';
 import 'package:news_app/news%20types/sport.dart';
 import 'package:news_app/news%20types/business.dart';
@@ -11,21 +12,29 @@ class NewsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
+        shadowColor: Colors.amber,
         title: const Text(
           'NEWS',
           style: TextStyle(
             color: Colors.cyanAccent,
           ),
         ),
-        actions: const [
+        actions: [
           Padding(
-            padding: EdgeInsets.only(right: 16.0),
-            child: CircleAvatar(
-              backgroundColor: Colors.lightBlueAccent,
-              foregroundColor: Colors.black87,
-              child: Icon(Icons.person),
+            padding: const EdgeInsets.only(right: 16.0),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Change()));
+              },
+              child: const CircleAvatar(
+                backgroundColor: Colors.lightBlueAccent,
+                foregroundColor: Colors.black87,
+                child: Icon(Icons.person),
+              ),
             ),
           )
         ],
@@ -60,7 +69,7 @@ class NewsPage extends StatelessWidget {
                         child: const Text(
                           'Sabrina Carpenter to perform and wins Global Success',
                           style: TextStyle(
-                              fontSize: 12,
+                              fontSize: 15,
                               fontWeight: FontWeight.bold,
                               color: Colors.cyanAccent),
                         ),
@@ -70,8 +79,8 @@ class NewsPage extends StatelessWidget {
                       ),
                       Image.asset(
                         'assets/brits award.jpg',
-                        height: 150,
-                        width: 150,
+                        height: 90,
+                        width: 90,
                       )
                     ],
                   ),
@@ -103,7 +112,7 @@ class NewsPage extends StatelessWidget {
                         child: const Text(
                           '2025 UTME: JAMB to penalise underage applicants - Oloyede',
                           style: TextStyle(
-                              fontSize: 12,
+                              fontSize: 15,
                               fontWeight: FontWeight.bold,
                               color: Colors.cyanAccent),
                         ),
@@ -114,7 +123,7 @@ class NewsPage extends StatelessWidget {
                       Image.asset(
                         'assets/edu.jpg',
                         height: 200,
-                        width: 110,
+                        width: 45,
                       )
                     ],
                   ),
@@ -142,20 +151,22 @@ class NewsPage extends StatelessWidget {
                   child: Row(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(left: 5.0),
+                        padding: const EdgeInsets.only(left: 60.0),
                         child: const Text(
-                          'LookMan hitback at his Manager afer \'worst penalty kick ever\' comment',
+                          'E-sport',
                           style: TextStyle(
-                              fontSize: 5, fontWeight: FontWeight.bold),
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.cyanAccent),
                         ),
                       ),
                       SizedBox(
-                        width: 5,
+                        width: 15,
                       ),
                       Image.asset(
-                        'assets/sport.jpg',
-                        height: 50,
-                        width: 50,
+                        'assets/skysports.jpg',
+                        height: 220,
+                        width: 250,
                       )
                     ],
                   ),
@@ -187,7 +198,9 @@ class NewsPage extends StatelessWidget {
                         child: const Text(
                           'NGX reverses loss as investors pocket N505bn',
                           style: TextStyle(
-                              fontSize: 12, fontWeight: FontWeight.bold),
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.cyanAccent),
                         ),
                       ),
                       SizedBox(
@@ -195,8 +208,8 @@ class NewsPage extends StatelessWidget {
                       ),
                       Image.asset(
                         'assets/Nig.jpg',
-                        height: 200,
-                        width: 200,
+                        height: 150,
+                        width: 150,
                       )
                     ],
                   ),
@@ -228,7 +241,9 @@ class NewsPage extends StatelessWidget {
                         child: const Text(
                           'Deprioritising Maradi railway project',
                           style: TextStyle(
-                              fontSize: 12, fontWeight: FontWeight.bold),
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.cyanAccent),
                         ),
                       ),
                       SizedBox(
@@ -236,8 +251,8 @@ class NewsPage extends StatelessWidget {
                       ),
                       Image.asset(
                         'assets/edit.jpg',
-                        height: 300,
-                        width: 250,
+                        height: 200,
+                        width: 200,
                       )
                     ],
                   ),
