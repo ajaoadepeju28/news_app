@@ -30,9 +30,9 @@ class HomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold),
           ),
           Text(
-            '',
+            'D\'s News ',
             style: TextStyle(
-                fontSize: 20,
+                fontSize: 24,
                 color: Colors.white,
                 fontFamily: 'Times New Roman',
                 fontStyle: FontStyle.italic,
