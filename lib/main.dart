@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/Home_screen.dart';
 import 'package:news_app/news_page.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'NewsApp',
-      home: NewsPage(),
+      home:HomeScreen(),
     );
   }
 }
