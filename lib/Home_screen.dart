@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             'WELCOME',
             style: TextStyle(
                 fontSize: 30,
@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
                 fontStyle: FontStyle.italic,
                 fontWeight: FontWeight.bold),
           ),
-          Text(
+          const Text(
             'to',
             style: TextStyle(
                 fontSize: 20,
@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget {
                 fontStyle: FontStyle.italic,
                 fontWeight: FontWeight.bold),
           ),
-          Text(
+          const Text(
             'D\'s News ',
             style: TextStyle(
                 fontSize: 24,
@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
                       MaterialPageRoute(
                           builder: (context) => const NewsPage()));
                 },
-                child: Text(
+                child: const Text(
                   'click here',
                   style: TextStyle(
                       fontSize: 25,
