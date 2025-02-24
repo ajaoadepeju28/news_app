@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/news%20types/change.dart';
 import 'package:news_app/news%20types/editoral.dart';
 import 'package:news_app/news%20types/sport.dart';
 import 'package:news_app/news%20types/business.dart';
@@ -22,19 +21,13 @@ class NewsPage extends StatelessWidget {
             color: Colors.cyanAccent,
           ),
         ),
-        actions: [
+        actions: const [
           Padding(
-            padding: const EdgeInsets.only(right: 16.0),
-            child: InkWell(
-              onTap: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Change()));
-              },
-              child: const CircleAvatar(
-                backgroundColor: Colors.lightBlueAccent,
-                foregroundColor: Colors.black87,
-                child: Icon(Icons.person),
-              ),
+            padding: EdgeInsets.only(right: 16.0),
+            child: CircleAvatar(
+              backgroundColor: Colors.lightBlueAccent,
+              foregroundColor: Colors.black87,
+              child: Icon(Icons.person),
             ),
           )
         ],
@@ -64,9 +57,9 @@ class NewsPage extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 5.0),
-                        child: const Text(
+                      const Padding(
+                        padding: EdgeInsets.only(left: 5.0),
+                        child: Text(
                           'Sabrina Carpenter to perform and wins Global Success',
                           style: TextStyle(
                               fontSize: 15,
@@ -74,7 +67,7 @@ class NewsPage extends StatelessWidget {
                               color: Colors.cyanAccent),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
                       Image.asset(
@@ -107,9 +100,9 @@ class NewsPage extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 5.0),
-                        child: const Text(
+                      const Padding(
+                        padding: EdgeInsets.only(left: 5.0),
+                        child: Text(
                           '2025 UTME: JAMB to penalise underage applicants - Oloyede',
                           style: TextStyle(
                               fontSize: 15,
@@ -117,7 +110,7 @@ class NewsPage extends StatelessWidget {
                               color: Colors.cyanAccent),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
                       Image.asset(
@@ -150,9 +143,9 @@ class NewsPage extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 60.0),
-                        child: const Text(
+                      const Padding(
+                        padding: EdgeInsets.only(left: 60.0),
+                        child: Text(
                           'E-sport',
                           style: TextStyle(
                               fontSize: 18,
@@ -160,7 +153,7 @@ class NewsPage extends StatelessWidget {
                               color: Colors.cyanAccent),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 15,
                       ),
                       Image.asset(
@@ -193,9 +186,9 @@ class NewsPage extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 5.0),
-                        child: const Text(
+                      const Padding(
+                        padding: EdgeInsets.only(left: 5.0),
+                        child: Text(
                           'NGX reverses loss as investors pocket N505bn',
                           style: TextStyle(
                               fontSize: 14,
@@ -203,7 +196,7 @@ class NewsPage extends StatelessWidget {
                               color: Colors.cyanAccent),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
                       Image.asset(
@@ -236,9 +229,9 @@ class NewsPage extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 5.0),
-                        child: const Text(
+                      const Padding(
+                        padding: EdgeInsets.only(left: 5.0),
+                        child: Text(
                           'Deprioritising Maradi railway project',
                           style: TextStyle(
                               fontSize: 15,
@@ -246,7 +239,7 @@ class NewsPage extends StatelessWidget {
                               color: Colors.cyanAccent),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
                       Image.asset(
